@@ -24,10 +24,7 @@ export const GET: APIRoute = ({ site }) => {
 - [About](${url('/about')}): a short biography of ${siteInfo.name}.
 - [Contact](${url('/contact')}): ways to follow and reach out.
 
-## Elsewhere
-- Instagram: ${social.instagram}
-- LinkedIn: ${social.linkedin}
-- GitHub: ${social.github}
+
 `;
 
   return new Response(body, {
