@@ -1,4 +1,9 @@
 # Photography Portfolio + Blog — Astro Template
+BREAK
+For most modern laptops: Press Ctrl + Fn + B (or Ctrl + Fn + P).
+
+
+
 
 A minimal, fast photography portfolio with two blogs and a fixed left-hand
 navigation (**Digital · Analog · Calendar · Tech Blog · Photo Blog · About ·

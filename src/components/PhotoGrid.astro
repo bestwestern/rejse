@@ -32,8 +32,34 @@ const rejsedag = import.meta.glob<{ default: ImageMetadata }>(
   "../assets/rejsedag/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
   { eager: true },
 );
+let files=[];
+let meta="jkl";
+switch(collection) {
+  case "analog":
+   files=analog;
+   meta=new Map<string, GalleryPhoto>(
+ analogMeta.map((e) => [e.file, e]),
+);
+    break;
+     case "digital":
+   files=digital;
+   meta=new Map<string, GalleryPhoto>(
+ digitalMeta.map((e) => [e.file, e]),
+);
+    break;
+    
+     case "rejsedag":
 
-const files =
+meta=new Map<string, GalleryPhoto>(
+ rejsedagMeta.map((e) => [e.file, e]),
+);
+   files=rejsedag;
+    break;
+    
+
+} 
+
+const filesold =
   collection === "analog"
     ? analog
     : collection === "rejsedag"
@@ -59,10 +85,9 @@ const MONTHS = [
 // caption renders as "Month Year, Location" — the same format as the Calendar —
 // shown under each photo and in the lightbox. It stays empty until a location is
 // filled in, so an un-described photo simply shows on its own.
-const meta = new Map<string, GalleryPhoto>(
+const meta2 = new Map<string, GalleryPhoto>(
   (collection === "analog" ? analogMeta : digitalMeta).map((e) => [e.file, e]),
 );
-
 // Order by the described date, newest first, so adding an older photo never
 // requires renumbering files. Within the same month + year, descriptions sort
 // Z→A (an "a…" location appears below a "z…" one). Photos without a date yet
@@ -71,6 +96,8 @@ const meta = new Map<string, GalleryPhoto>(
 const entries = Object.entries(files).sort(([pathA], [pathB]) => {
   const a = meta.get(pathA.split("/").pop()!);
   const b = meta.get(pathB.split("/").pop()!);
+  console.log(analogMeta);
+  console.log("SORTER HER")
   return (
     (b?.year ?? 0) - (a?.year ?? 0) ||
     (b?.month ?? 0) - (a?.month ?? 0) ||
@@ -78,15 +105,11 @@ const entries = Object.entries(files).sort(([pathA], [pathB]) => {
     pathB.localeCompare(pathA, undefined, { numeric: true })
   );
 });
+const entries_new=Object.entries(files);
 function describe(e: GalleryPhoto | undefined): string {
   if (!e) return "";
   const loc = e.location.trim();
-  const date =
-    e.month >= 1 && e.month <= 12 && e.year > 0
-      ? `${MONTHS[e.month - 1]} ${e.year}`
-      : "";
-  if (date && loc) return `${date}, ${loc}`;
-  return date || loc;
+  return loc;
 }
 
 // Fallback alt text from the filename ("01-snowy-harbor.jpg" -> "Snowy harbor")
@@ -112,7 +135,6 @@ const photos = await Promise.all(
     return { ...photo, caption, alt: caption || captionFor(path, i), entry };
   }),
 );
-
 // Structured data: an ImageGallery of ImageObjects attributed to the photographer.
 // When a photo has a description, mirror the Calendar's richer metadata
 // (caption, date, place).

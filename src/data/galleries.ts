@@ -25,8 +25,8 @@ export interface GalleryPhoto {
 }
 
 export const digital: GalleryPhoto[] = [
-  { year: 0, month: 0, location: "Vi ankommer til Canada. Hvor meget kan jeg skreive her for ødet bliver fsa. Det er ret sjovt - hvad med ai vil det et ilføje noget?", file: "PXL_20251002_190604292.jpg" },
   { year: 2024, month: 9, location: "Mountain ridge", file: "digital-01.jpg" },
+  { year: 0, month: 0, location: "Vi anskommer til Canada. Hvor meget kan jeg skreive her for ødet bliver fsa. Det er ret sjovt - hvad med ai vil det et ilføje noget?", file: "PXL_20251002_190604292.jpg" },
   { year: 2024, month: 9, location: "Coastal cliffs", file: "digital-02.jpg" },
   { year: 2024, month: 7, location: "Old harbor", file: "digital-03.jpg" },
   { year: 2024, month: 6, location: "Pine forest", file: "digital-04.jpg" },
@@ -37,7 +37,13 @@ export const digital: GalleryPhoto[] = [
   { year: 0, month: 0, location: "", file: "digital-08.jpg" },
 ];
 export const rejsedag: GalleryPhoto[] = [
-  { year: 2024, month: 7, location: "Old harbor", file: "digital-03.jpg" },
+  { year: 0, month: 0, location: "", file: "digital-08.jpg" },
+  { year: 0, month: 1, location: "Du må vente lidt længere", file: "wait.png" },
+  { year: 0, month: 0, location: "Vi anskommer til Canada. Hvor meget kan jeg skreive her for ødet bliver fsa. Det er ret sjovt - hvad med ai vil det et ilføje noget?", file: "PXL_20251002_190604292.jpg" },
+];
+export const rejsedag_old: GalleryPhoto[] = [
+  { year: 2024, month: 5, location: "Old harssdsbor", file: "digital-03.jpg" },
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
 ];
 
 export const analog: GalleryPhoto[] = [
