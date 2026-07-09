@@ -93,11 +93,21 @@ const meta2 = new Map<string, GalleryPhoto>(
 // Z→A (an "a…" location appears below a "z…" one). Photos without a date yet
 // (year/month 0) sink to the bottom; filename (numeric, descending) is the
 // final tie-break so the order is stable.
+let metaarray=Array.from(meta)
+metaarray=metaarray.map(x=>x[0])
+console.log(metaarray)
+console.log("ffs")
+console.log(files)
 const entries = Object.entries(files).sort(([pathA], [pathB]) => {
   const a = meta.get(pathA.split("/").pop()!);
   const b = meta.get(pathB.split("/").pop()!);
-  console.log(analogMeta);
-  console.log("SORTER HER")
+  console.log({a})
+  console.log({b})
+  if (a&&b){
+    console.log("bingo")
+return metaarray.indexOf(a.file)-metaarray.indexOf(b.file);
+
+  }
   return (
     (b?.year ?? 0) - (a?.year ?? 0) ||
     (b?.month ?? 0) - (a?.month ?? 0) ||
