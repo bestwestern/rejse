@@ -5,6 +5,9 @@ import { unified } from '@astrojs/markdown-remark';
 
 // https://astro.build/config
 export default defineConfig({
+  prefetch: {
+   prefetchAll: true
+  },
   // MDX powers the blogs: Markdown + components, so posts can drop in
   // gallery-style <Photo> / <Gallery> blocks. Generate sitemap-index.xml +
   // sitemap-0.xml (referenced from robots.txt).
