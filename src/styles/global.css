@@ -371,7 +371,7 @@ a {
 /* Discourage casual saving/dragging/selecting of photos.
    This is a deterrent, not DRM — screenshots are always possible. */
 .photo__img,
-.lightbox__img {
+.OLDlightbox__img {
   -webkit-user-select: none;
   user-select: none;
   -webkit-user-drag: none;
