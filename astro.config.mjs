@@ -6,6 +6,7 @@ import { unified } from '@astrojs/markdown-remark';
 // https://astro.build/config
 export default defineConfig({
   prefetch: {
+      defaultStrategy: 'load',
    prefetchAll: true
   },
   // MDX powers the blogs: Markdown + components, so posts can drop in
