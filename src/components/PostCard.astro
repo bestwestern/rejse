@@ -20,7 +20,7 @@ const dateISO = date.toISOString().slice(0, 10);
   <p class="post-card__meta">
     <time datetime={dateISO}>{dateLabel}</time>
   </p>
-  {post.data.description}</p>
+  <p class="post-card__excerpt">{post.data.description}</p>
   {
     post.data.tags.length > 0 && (
       <ul class="post-card__tags" aria-label="Tags">
