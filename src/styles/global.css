@@ -1302,7 +1302,7 @@ a {
 }
 
 /* ── Phones: single-column gallery ─────────────────────────────────────── */
-@media (max-width: 640px) {
+@media (max-width: 6400px) {
   .photo-grid,
   .calendar-grid {
     grid-template-columns: 1fr;

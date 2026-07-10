@@ -48,6 +48,7 @@ export const rejsedag_old: GalleryPhoto[] = [
 export const dag1: GalleryPhoto[] = [
   { year: 0, month: 0, location: "Højt at flyve", file: "billet.png" },
   { year: 2024, month: 5, location: "Toget blev mere og så mindre forsinket, så der er lidt nerver bag smilet", file: "bng.jpg" },
+  { year: 2024, month: 5, location: "Skrap sikkerhed", file: "PXL_20260710_091001342.jpg" },
 ];
 
 export const dag2: GalleryPhoto[] = [

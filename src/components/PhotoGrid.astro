@@ -411,34 +411,18 @@ const jsonLd = {
       and they'll appear here.
     </p>
   ) : (
-    <section class="calendar-grid" aria-label={`${collection} photographs`}>
+    <div>
       {photos.map((photo, i) => (
-        <figure class="calendar-item">
-          <button
-            class="photo-tile"
-            type="button"
-            aria-label={`${photo.alt} — view larger`}
-            data-full={photo.full}
-            data-alt={photo.alt}
-            data-caption={photo.caption}
-          >
-            <img
-              class="photo__img"
-              src={photo.src}
-              srcset={photo.srcset}
-              sizes={GRID_SIZES}
-              alt={photo.alt}
-              loading={i < 4 ? "eager" : "lazy"}
-              decoding="async"
-              draggable={false}
-            />
-          </button>
+      <div>
+      <img       src={photo.src}/
+      
+      >
           {photo.caption && (
             <figcaption class="calendar-caption">{photo.caption}</figcaption>
           )}
-        </figure>
+          </div>
       ))}
-    </section>
+    </div>
   )
 }
 
