@@ -50,6 +50,9 @@ export const dag1: GalleryPhoto[] = [
   { year: 2024, month: 5, location: "Toget blev mere og så mindre forsinket, så der er lidt nerver bag smilet", file: "bng.jpg" },
 ];
 
+export const dag2: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
 export const dag3: GalleryPhoto[] = [
   { year: 0, month: 0, location: "Dagens tur", file: "mountain.png" },
   { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
