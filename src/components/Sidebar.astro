@@ -108,7 +108,7 @@ const isActive = (href: string) => {
       } catch {}
       sync();
     });
-
+localStorage.setItem('theme', 'light');
     // Follow live OS light/dark changes until the visitor makes a manual choice.
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
       let stored = null;
@@ -116,7 +116,7 @@ const isActive = (href: string) => {
         stored = localStorage.getItem('theme');
       } catch {}
       if (stored) return;
-      root.dataset.theme = e.matches ? 'dark' : 'light';
+      //root.dataset.theme = e.matches ? 'dark' : 'light';
       sync();
     });
   }
