@@ -8,6 +8,7 @@ import {
   analog as analogMeta,
   rejsedag as rejsedagMeta,
   dag1 as dag1Meta,
+  dag2 as dag2Meta,
   type GalleryPhoto,
 } from "../data/galleries";
 
@@ -38,6 +39,11 @@ const dag1 = import.meta.glob<{ default: ImageMetadata }>(
   "../assets/dag1/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
   { eager: true },
 );
+
+const dag2 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag2/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
 let files=[];
 let meta="jkl";
 switch(collection) {
@@ -64,6 +70,12 @@ meta=new Map<string, GalleryPhoto>(
  dag1Meta.map((e) => [e.file, e]),
 );
    files=dag1;
+    break;
+     case "dag2":
+meta=new Map<string, GalleryPhoto>(
+ dag2Meta.map((e) => [e.file, e]),
+);
+   files=dag2;
     break;
     
 
