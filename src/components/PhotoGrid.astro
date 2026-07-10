@@ -9,6 +9,23 @@ import {
   rejsedag as rejsedagMeta,
   dag1 as dag1Meta,
   dag2 as dag2Meta,
+  dag3 as dag3Meta,
+  dag4 as dag4Meta,
+  dag5 as dag5Meta,
+  dag6 as dag6Meta,
+  dag7 as dag7Meta,
+  dag8 as dag8Meta,
+  dag9 as dag9Meta,
+  dag11 as dag11Meta,
+  dag12 as dag12Meta,
+  dag13 as dag13Meta,
+  dag14 as dag14Meta,
+  dag15 as dag15Meta,
+  dag16 as dag16Meta,
+  dag17 as dag17Meta,
+  dag18 as dag18Meta,
+  dag19 as dag19Meta,
+ 
   type GalleryPhoto,
 } from "../data/galleries";
 
@@ -44,6 +61,74 @@ const dag2 = import.meta.glob<{ default: ImageMetadata }>(
   "../assets/dag2/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
   { eager: true },
 );
+const dag3 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag3/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
+const dag4 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag4/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
+const dag5 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag5/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
+const dag6 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag6/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
+const dag7 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag7/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
+const dag8 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag8/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
+const dag9 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag9/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
+const dag10 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag10/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
+const dag11 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag11/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
+const dag12 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag12/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
+const dag13 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag13/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
+const dag14 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag14/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
+const dag15 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag15/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
+const dag16 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag16/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
+const dag17 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag17/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
+const dag18 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag18/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
+const dag19 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag19/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
 let files=[];
 let meta="jkl";
 switch(collection) {
@@ -76,6 +161,125 @@ meta=new Map<string, GalleryPhoto>(
  dag2Meta.map((e) => [e.file, e]),
 );
    files=dag2;
+    break;
+    
+     case "dag3":
+meta=new Map<string, GalleryPhoto>(
+ dag3Meta.map((e) => [e.file, e]),
+);
+   files=dag3;
+    break;
+    
+     case "dag4":
+meta=new Map<string, GalleryPhoto>(
+ dag4Meta.map((e) => [e.file, e]),
+);
+   files=dag4;
+    break;
+    
+     case "dag5":
+meta=new Map<string, GalleryPhoto>(
+ dag5Meta.map((e) => [e.file, e]),
+);
+   files=dag5;
+    break;
+    
+     case "dag6":
+meta=new Map<string, GalleryPhoto>(
+ dag6Meta.map((e) => [e.file, e]),
+);
+   files=dag6;
+    break;
+    
+     case "dag7":
+meta=new Map<string, GalleryPhoto>(
+ dag7Meta.map((e) => [e.file, e]),
+);
+   files=dag7;
+    break;
+    
+     case "dag8":
+meta=new Map<string, GalleryPhoto>(
+ dag8Meta.map((e) => [e.file, e]),
+);
+   files=dag8;
+    break;
+    
+     case "dag9":
+meta=new Map<string, GalleryPhoto>(
+ dag9Meta.map((e) => [e.file, e]),
+);
+   files=dag9;
+    break;
+    
+     case "dag10":
+meta=new Map<string, GalleryPhoto>(
+ dag10Meta.map((e) => [e.file, e]),
+);
+   files=dag10;
+    break;
+    
+     case "dag11":
+meta=new Map<string, GalleryPhoto>(
+ dag11Meta.map((e) => [e.file, e]),
+);
+   files=dag11;
+    break;
+    
+     case "dag12":
+meta=new Map<string, GalleryPhoto>(
+ dag12Meta.map((e) => [e.file, e]),
+);
+   files=dag12;
+    break;
+    
+     case "dag13":
+meta=new Map<string, GalleryPhoto>(
+ dag13Meta.map((e) => [e.file, e]),
+);
+   files=dag13;
+    break;
+    
+     case "dag14":
+meta=new Map<string, GalleryPhoto>(
+ dag14Meta.map((e) => [e.file, e]),
+);
+   files=dag14;
+    break;
+    
+     case "dag15":
+meta=new Map<string, GalleryPhoto>(
+ dag15Meta.map((e) => [e.file, e]),
+);
+   files=dag15;
+    break;
+    
+     case "dag16":
+meta=new Map<string, GalleryPhoto>(
+ dag16Meta.map((e) => [e.file, e]),
+);
+   files=dag16;
+    break;
+    
+     case "dag17":
+meta=new Map<string, GalleryPhoto>(
+ dag17Meta.map((e) => [e.file, e]),
+);
+   files=dag17;
+    break;
+    
+     case "dag18":
+meta=new Map<string, GalleryPhoto>(
+ dag18Meta.map((e) => [e.file, e]),
+);
+   files=dag18;
+    break;
+    
+     case "dag19":
+meta=new Map<string, GalleryPhoto>(
+ dag19Meta.map((e) => [e.file, e]),
+);
+   files=dag19;
     break;
     
 

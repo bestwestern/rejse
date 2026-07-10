@@ -50,9 +50,59 @@ export const dag1: GalleryPhoto[] = [
   { year: 2024, month: 5, location: "Toget blev mere og så mindre forsinket, så der er lidt nerver bag smilet", file: "bng.jpg" },
 ];
 
-export const dag2: GalleryPhoto[] = [
+export const dag3: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Dagens tur", file: "mountain.png" },
   { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
 ];
+export const dag4: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
+export const dag5: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
+export const dag6: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
+export const dag7: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
+export const dag8: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
+export const dag9: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
+export const dag10: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
+export const dag11: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
+export const dag12: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
+export const dag13: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
+export const dag14: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
+export const dag15: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
+export const dag16: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
+export const dag17: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
+export const dag18: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
+export const dag19: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+];
+
 
 export const analog: GalleryPhoto[] = [
   { year: 2024, month: 5, location: "Quiet street", file: "analog-01.jpg" },

@@ -8,7 +8,7 @@ import type { ImageMetadata } from 'astro';
 // Raise it (e.g. 5120) for sharper 8K at the cost of larger files; lower it for
 // more protection. Source originals that Astro emits while transforming are
 // stripped after the build by scripts/strip-unreferenced-assets.mjs.
-export const MAX_WEB = 3840;
+export const MAX_WEB = 5120;
 const WIDTHS = [640, 1080, 1600, 2048, 2560, 3840];
 
 // Responsive `sizes` for the 2-column 3:2 galleries. Desktop reserves the 300px
@@ -56,7 +56,7 @@ export async function renderPhoto(src: ImageMetadata): Promise<RenderedPhoto> {
   widths.sort((a, b) => a - b);
 
   const renditions = await Promise.all(
-    widths.map((w) => getImage({ src, width: w, format: 'webp', quality: 80 }))
+    widths.map((w) => getImage({ src, width: w, format: 'webp', quality: 90 }))
   );
   const srcset = renditions.map((r) => `${r.src} ${r.attributes.width}w`).join(', ');
   const largest = renditions[renditions.length - 1];
