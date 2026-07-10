@@ -110,8 +110,6 @@ const year = new Date().getFullYear();
         const t = e.target as HTMLElement | null;
         if (t && t.closest('.photo-tile, .lightbox')) e.preventDefault();
       };
-      document.addEventListener('contextmenu', guard);
-      document.addEventListener('dragstart', guard);
     </script>
   </body>
 </html>
