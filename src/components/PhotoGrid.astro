@@ -413,6 +413,7 @@ const jsonLd = {
   ) : (
     <div>
       {photos.map((photo, i) => (
+    <div>
       <div>
       <img       src={photo.src}/
       
@@ -420,6 +421,10 @@ const jsonLd = {
           {photo.caption && (
             <figcaption class="calendar-caption">{photo.caption}</figcaption>
           )}
+          </div>
+          <br/>
+          <br/>
+          <br/>
           </div>
       ))}
     </div>

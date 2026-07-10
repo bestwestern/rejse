@@ -29,7 +29,6 @@ export const nav: NavItem[] = [
   { label: 'Dag 4', href: '/dag4' },
   { label: 'Dag 5', href: '/dag5' },
   { label: 'Dag 6', href: '/dag6' },
-  { label: 'Dag 6', href: '/dag6' },
   { label: 'Dag 7', href: '/dag7' },
   { label: 'Dag 8', href: '/dag8' },
   { label: 'Dag 9', href: '/dag9' },
