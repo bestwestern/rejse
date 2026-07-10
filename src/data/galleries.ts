@@ -51,7 +51,7 @@ export const dag1: GalleryPhoto[] = [
 ];
 
 export const dag2: GalleryPhoto[] = [
- { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
+  { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
 ];
 
 export const analog: GalleryPhoto[] = [
