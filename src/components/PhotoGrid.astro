@@ -7,11 +7,12 @@ import {
   digital as digitalMeta,
   analog as analogMeta,
   rejsedag as rejsedagMeta,
+  dag1 as dag1Meta,
   type GalleryPhoto,
 } from "../data/galleries";
 
 interface Props {
-  collection: "digital" | "analog" | "rejsedag";
+  collection: "digital" | "analog" | "rejsedag"| "dag1";
 }
 const { collection } = Astro.props;
 
@@ -32,6 +33,11 @@ const rejsedag = import.meta.glob<{ default: ImageMetadata }>(
   "../assets/rejsedag/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
   { eager: true },
 );
+
+const dag1 = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/dag1/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
+  { eager: true },
+);
 let files=[];
 let meta="jkl";
 switch(collection) {
@@ -49,11 +55,15 @@ switch(collection) {
     break;
     
      case "rejsedag":
-
 meta=new Map<string, GalleryPhoto>(
  rejsedagMeta.map((e) => [e.file, e]),
 );
    files=rejsedag;
+     case "dag1":
+meta=new Map<string, GalleryPhoto>(
+ dag1Meta.map((e) => [e.file, e]),
+);
+   files=dag1;
     break;
     
 
@@ -95,14 +105,12 @@ const meta2 = new Map<string, GalleryPhoto>(
 // final tie-break so the order is stable.
 let metaarray=Array.from(meta)
 metaarray=metaarray.map(x=>x[0])
+console.log("her")
 console.log(metaarray)
-console.log("ffs")
 console.log(files)
 const entries = Object.entries(files).sort(([pathA], [pathB]) => {
   const a = meta.get(pathA.split("/").pop()!);
   const b = meta.get(pathB.split("/").pop()!);
-  console.log({a})
-  console.log({b})
   if (a&&b){
     console.log("bingo")
 return metaarray.indexOf(a.file)-metaarray.indexOf(b.file);

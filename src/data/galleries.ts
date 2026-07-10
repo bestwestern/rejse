@@ -45,6 +45,11 @@ export const rejsedag_old: GalleryPhoto[] = [
   { year: 2024, month: 5, location: "Old harssdsbor", file: "digital-03.jpg" },
   { year: 0, month: 0, location: "Du må vente lidt længere", file: "wait.png" },
 ];
+export const dag1: GalleryPhoto[] = [
+  { year: 0, month: 0, location: "Højt at flyve", file: "billet.png" },
+  { year: 2024, month: 5, location: "Toget blev mere og så mindre forsinket, så der er lidt nerver bag smilet", file: "bng.jpg" },
+
+];
 
 export const analog: GalleryPhoto[] = [
   { year: 2024, month: 5, location: "Quiet street", file: "analog-01.jpg" },

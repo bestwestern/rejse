@@ -23,6 +23,7 @@ export const site = {
 // Left-hand navigation. "Digital" is the home page and shows by default.
 export const nav: NavItem[] = [
   { label: 'Startside', href: '/' },//rejsedag
+  { label: 'Dag 1', href: '/dag1' },
   { label: 'Digital', href: '/digital' },
   { label: 'rejsedag', href: '/rejsedag' },
   { label: 'Analog', href: '/analog' },
