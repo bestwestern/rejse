@@ -1,19 +1,51 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import PhotoGrid from "../components/PhotoGrid.astro";
+import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
+import Im1 from "../assets/dag1/PXL_20260710_090958234.jpg";
 ---
 
 <Layout title="Første dag" description="Rejsedag">
   <h1 class="gallery-label">Rejsedag</h1>
-   <p >
+  <p >
    Vi vågnede kl 6 og tog taxa til banegården.
    </p>
-   <p>Destination: Sandman Hotel Calgary Airport
+  <br/>
+  <br/>
+<img src="/dag1/bng.jpg">
+  <br/>
+  <br/>
+  <p>Dagen stod på 12 timers flyvning!</p>
+
+<img src="/dag1/billet.png">
+  <br/>
+  <p>Ellen blev stoppet af sikkerhedsvagt.</p>
+
+<img src="/dag1/PXL_20260710_090958234.jpg">
+<img src="/dag1/PXL_20260710_091001342.jpg">
+  <p>Paskontrollen trak ud men vi havde tid til preboarding selfie</p>
+
+<img src="/dag1/PXL_20260710_102934125.jpg">
+  <p>
+  Der blev ret hurtigt serveret og så blev der set 3½ film (Ellen),  2 film (Line) og jeg spillede computer og lavede denne side..
+  </p>
+<img src="/dag1/PXL_20260710_121737731.MP.jpg">
+  <p>
+ Vi mellemlandede i Toronto i små 4 timer før næste flyvetur til Calgary
+  </p>
+<img src="/dag1/PXL_20260710_201827735.MP.jpg">
+<p>
+Vi landede fik vores bagage og ringede til hotellet som sendte en shuttle.
+Chaufføren fortalte der var en anden dansker med som ikke havde fået sin kuffert. Han havde nogen af de samme destinationer og et krydstogt - spændende om vi ser ham igen.
+</p>
+
+   <p>Vi overnattede på Sandman Hotel Calgary Airport
    </p>
    <p>25 Hopewell Way NE, Calgary, AB T3J 4V7, Canada
    </p>
-
+  
+  
    <br/>
    <br/>
-  <PhotoGrid collection="dag1" />
 </Layout>
